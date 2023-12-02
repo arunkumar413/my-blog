@@ -1,0 +1,58 @@
+body{
+    font-family: sans-serif;
+    background-color: #ccc;
+
+}
+
+.blog-layout{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+header{
+    grid-column: 1/13 ;
+}
+
+aside{
+    grid-column: 1/4;
+}
+
+main{
+    grid-column: 4/13;
+}
+
+footer{
+    grid-column: 1/13;
+}
+
+header,aside,main,footer{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 1rem;
+    background-color: white;
+
+}
+
+.sidebar-post-links{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+a:hover{
+    background-color: aliceblue;
+}
+
+p{
+    font-size: 1.2rem;
+}
